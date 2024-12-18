@@ -1,0 +1,358 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    /* border:2px solid aquamarine; */
+    position: relative;
+    transform: translate(0%,10%);
+    /* background-color:; */
+}
+
+.overall-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10%;
+    /* align-items: start; */
+}
+    
+.confirm-header{
+    text-align:center;
+    font-size: var(--font-size-medium);
+    color: var(--background-color);
+    font-family: "Space Grotesk", sans-serif;  
+    /* margin: 10px 0px 0px 0px; */
+    letter-spacing: 4px;
+    margin: 50px;
+}
+/* #confirm-header{
+    margin-top: 100px;
+} */
+
+#container{
+    width:50%; 
+    height:50vh;
+    transform: translate(10%);
+} 
+
+#button-wrapper{
+    width: 30%;
+    display: block;
+    justify-content:flex-start ;
+    
+   
+}
+
+
+form{
+    width:200px;
+    /* align-items: start; */
+}
+#otherBtns{
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    row-gap: 30px;
+}
+
+
+#capture-button{
+    width: 200px;
+    padding: 15px;
+   background-color: #35120f;
+   color: white;
+   font-size: 20px;
+   font-family: 'Roboto',sans-serif;
+   border: none;
+
+
+}
+
+#capturebutton-cancel{
+    width: 200px;
+    padding: 15px;
+    background-color: #35120f;
+   color: white;
+   font-size: 20px;
+   font-family: 'Roboto',sans-serif;
+   border: none;
+
+
+}
+#capturebutton-submit{
+    width: 200px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #35120f;
+   color: white;
+   font-size: 20px;
+   font-family: 'Roboto',sans-serif;
+   border: none;
+
+}
+
+.webcam{
+    margin: 0 auto;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    
+} 
+#capture-button:hover,#capturebutton-submit:hover,#capturebutton-cancel:hover {
+    background-color: white; 
+    border: 2px solid #7D2623;
+    color:#7D2623;
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
+
+@media  (max-width: 480px){
+body{
+        overflow: hidden;
+}
+.overall-container{
+    display: block;
+    margin: 0 auto;
+    
+}
+#container{
+    width:70%;
+    height:40vh;
+    margin: 0 auto;
+    transform: translate(0%);
+
+   
+}
+.wrapper{
+    width: 100%;
+    transform: translate(0%,0%);
+
+}
+.webcam{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    
+} 
+
+.confirm-header{
+    /* margin: 0px; */
+text-align: center;} 
+
+
+#button-wrapper{
+    width: 100%;
+    display: block;
+    margin-block: 20px;
+    /* justify-content:center ; */
+}
+
+
+#webcapture{
+    width:100%;
+    margin-block: 10px;
+    
+}
+#otherBtns{
+   
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#capture-button{
+   width: 70%;
+   /* margin: 0 auto; */
+   display: inline-block;
+   margin-block: 10px;
+   transform: translate(21%);
+   border-radius: 6px;
+
+
+}
+
+#capturebutton-cancel{
+   
+   width: 70%;
+   /* margin: 0 auto; */
+   display: block;
+   margin-block: 10px;
+   transform: translate(21%);
+   border-radius: 6px;
+
+}
+#capturebutton-submit{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+
+
+}
+
+/* .webcam{
+    /* margin: 0 auto; 
+    /* object-fit: cover;  
+    width: 100%;
+    height: 100%;
+    
+}  */
+#capture-button:hover,#capturebutton-submit:hover,#capturebutton-cancel:hover {
+    background-color: white; 
+    border: 2px solid #7D2623;
+    color:#7D2623;
+    cursor:pointer;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .confirm-header{
+        text-align:center;
+        font-size: var(--font-size-medium);
+        color: var(--background-color);
+        font-family: "Space Grotesk", sans-serif;  
+        width: 100%;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .wrapper{
+        width:100%;
+    }
+    
+    #container{
+        width: 40%;
+        margin-top: 30px;
+        /* height: 100%; */
+    }
+   
+    .overall-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+       
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .confirm-header{
+        text-align:center;
+        font-size: var(--font-size-medium);
+        color: var(--background-color);
+        font-family: "Space Grotesk", sans-serif;  
+        width: 100%;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .wrapper{
+        width:100%;
+    }
+    
+    #container{
+        /* width: %; */
+        margin-top: 30px;
+        /* height: 100%; */
+    }
+   
+    .overall-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 80%;
+        margin:0 auto;
+       
+    }
+    
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+   
+    .confirm-header{
+        text-align:center;
+        font-size: var(--font-size-medium);
+        color: var(--background-color);
+        font-family: "Space Grotesk", sans-serif;  
+        width: 100%;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .wrapper{
+        width:100%;
+    }
+    
+    #container{
+        /* width: %; */
+        margin-top: 30px;
+        /* height: 100%; */
+    }
+   
+    .overall-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 80%;
+        margin:0 auto;
+       
+    }
+}
+
+
+@media (min-width: 1201px) and (max-width: 1280px){
+    .confirm-header{
+        text-align:center;
+        font-size: var(--font-size-medium);
+        color: var(--background-color);
+        font-family: "Space Grotesk", sans-serif;  
+        width: 100%;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    .wrapper{
+        width:100%;
+    }
+    
+    #container{
+        /* width: %; */
+        margin-top: 30px;
+        /* height: 100%; */
+    }
+   
+    .overall-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width: 80%;
+        margin:0 auto;
+       
+    }
+   
+}

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size:10px;
+    
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: #1133AE;
+    --background-color:#35120f;
+    --font-size-large:50px;
+    --font-size-medium: 30px;
+    --font-size-small: 20px;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.overall-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    height: 100vh;
+    max-height: 100vh;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.img-Box{
+    width: 50%;
+    max-width: 50%;
+    height: 100vh;
+    max-height:100vh;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#login-box{
+    width: 50%;
+    max-width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+#login-box-wrapper{
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#login-header{
+
+    text-align:left;
+    font-size: var(--font-size-medium);
+    color: var(--background-color);
+    font-family: "Space Grotesk", sans-serif;  
+    margin: 0px 0px 20px 0px;  
+    font-size: var(--font-size-medium);
+    letter-spacing: 4px;
+
+
+}
+
+.login-paragraph{
+
+width: 100%;
+padding: 0px 0px 20px 0px;
+
+
+}
+
+#notyet{
+
+    font-size: var(--font-size-small);
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    color: #7D2623;
+
+}
+
+#errorMsg{
+    font-size: 16px;
+    color: red;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+.no-underline{
+
+    text-decoration: underline;
+    color: #0e62cf;
+    font-size: var(--font-size-small);
+
+
+}
+
+.no-underline:hover{
+    color: var(--background-color);
+}
+
+
+.labels{
+
+    letter-spacing: 4px;
+    color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+
+   
+}
+
+#login-form{
+    width: 70%;
+    max-width: 70%;
+    margin: 0 auto;
+    
+}
+
+#email{
+
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 20px;
+    text-align: left;
+    font-family: 20px;
+
+}
+
+
+#logpassword{
+
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 20px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+#submitbutton{
+
+    width: 100%;
+    background-color:var(--background-color);
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 20px 20px;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    
+}
+
+#submitbutton:hover{
+    background-color: #7D2623;
+    color:var();
+    font-size: 16px;
+    cursor:pointer;
+}
+
+
+
+.loading{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left:30%;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    border-top: 2px solid green;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+
+    
+
+}
+
+@keyframes spin {
+
+    to{transform:rotate(360deg);}
+    
+}
+@-webkit-keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media  (max-width: 480px){
+
+    body{
+        overflow: hidden;
+    }
+  .img-Box{
+    display: none;
+}
+
+#login-box{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+
+}
+
+#login-form{
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    body{
+        overflow: hidden;
+    }
+
+    .img-Box{
+        display: none;
+    }
+    
+    #login-box{
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+    
+    }
+    
+    #login-form{
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }    
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    body{
+        overflow: hidden;
+    }
+
+    .img-Box{
+        display: none;
+    }
+    
+    #login-box{
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+    
+    }
+    
+    #login-form{
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }    
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+    body{
+        overflow: hidden;
+    }
+
+    .img-Box{
+        width: 60%;
+        max-width: 60%;
+        /* padding-left: 80px; */
+
+
+    }
+    img{
+
+        width: 100%;
+        height: 100vh;
+        object-fit:cover; 
+    
+    }
+    
+    #login-box{
+        width: 40%;
+        max-width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+    
+    }
+    
+    #login-form{
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }    
+
+
+}
+
+
+@media (min-width: 1201px) and (max-width: 1280px){
+    body{
+        overflow: hidden;
+    }
+    .img-Box{
+        width: 60%;
+        max-width: 60%;
+    
+    }
+    
+    #login-box{
+        width: 40%;
+        max-width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+    
+    }
+    
+    #login-form{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }    
+}
